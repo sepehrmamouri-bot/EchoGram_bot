@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://sepehrmamouri-bot.github.io/YOUR_REPO/sitemap.xml
