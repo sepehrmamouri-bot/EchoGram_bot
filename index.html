@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اکوگرام | ربات چت ناشناس تلگرام، همشهری‌یاب GPS و چت با هوش مصنوعی</title>
+    
+    <!-- Comprehensive SEO Meta Tags -->
+    <meta name="description" content="اکوگرام (EchoGram) نسل آینده ربات چت ناشناس تلگرام است. قابلیت چت تصادفی، رادار افراد نزدیک و همشهری با GPS، دایرکت مستقیم ناشناس و هوش مصنوعی پیشرفته ۲۴ ساعته.">
+    <meta name="keywords" content="ربات چت ناشناس, چت ناشناس تلگرام, ربات دوست یابی, چت با همشهری, چت بر اساس موقعیت مکانی, اکوگرام, EchoGram, EchoGrammmbot, ربات تلگرام دختر پسر">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#090d16">
+    <link rel="canonical" href="https://t.me/EchoGrammmbot">
+
+    <!-- Open Graph / Telegram / Social Card -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="اکوگرام (EchoGram) | پیشرفته‌ترین ربات چت ناشناس تلگرام">
+    <meta property="og:description" content="هم‌اکنون بدون نصب برنامه به صورت کاملاً امن با افراد آنلاین و نزدیکانت چت کن!">
+    <meta property="og:url" content="https://t.me/EchoGrammmbot">
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:image" content="https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/art/icon256.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ربات چت ناشناس و همشهری یاب اکوگرام">
+    <meta name="twitter:description" content="اتصال تصادفی، چت با افراد نزدیک GPS و هوش مصنوعی سخنگو.">
+
+    <!-- Schema.org JSON-LD (Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "EchoGram Anonymous Bot",
+          "operatingSystem": "Telegram (Android, iOS, Web, Windows)",
+          "applicationCategory": "SocialNetworkingApplication",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "IRR" },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "3850" },
+          "url": "https://t.me/EchoGrammmbot"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "چگونه به ربات چت ناشناس اکوگرام متصل شوم؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "کافی است آیدی EchoGrammmbot را در تلگرام جستجو کرده یا روی لینک‌های ورود به ربات در این سایت کلیک کنید."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "آیا موقعیت مکانی من فاش می‌شود؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "خیر، موقعیت مکانی فقط برای محاسبه فاصله به کیلومتر استفاده شده و به هیچ عنوان نقشه یا مکان دقیق نمایش داده نمی‌شود."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --primary-glow: rgba(99, 102, 241, 0.4);
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --bg-dark: #090d16;
+            --card-bg: rgba(30, 41, 59, 0.65);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --gold: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Vazirmatn', 'Segoe UI', Roboto, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 60%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            position: stickybehavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 60%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 50% 90%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(9, 13, 22, 0.85);
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #a855f7, #6366f1, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 12px;color: #818cf8;
+            padding: 7px 18px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 22px;
+            line-height: 1.25;
+            background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 720px;
+            margin: 0 auto 35px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 42px;
+            border-radius: 50px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            box-shadow: 0 10px 30px -5px var(--primary-glow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 15px 35px -5px rgba(236, 72, 153, 0.6);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 45px 0 80px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 24px;
+            border-radius: 18px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #38bdf8;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Section Titles */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Steps */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .step-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .step-num {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .step-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        .step-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Simulator */
+        .simulator-box {
+            max-width: 500px;
+            margin: 0 auto 80px;
+            background: #17212b;
+            border: 2px solid #2b5278;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .sim-header {
+            background: #242f3d;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .sim-avatar {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .sim-body {
+            background: #0e1621;
+            padding: 20px;
+            min-height: 280px;
+            max-height: 320px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sim-msg {
+            max-width: 82%;
+            padding: 11px 15px;
+            border-radius: 14px;
+            font-size: 0.9rem;
+            line-height: 1.45;
+        }
+
+        .msg-in { background: #182533; align-self: flex-start; border-bottom-right-radius: 2px; }
+        .msg-out { background: #2b5278; align-self: flex-end; border-bottom-left-radius: 2px; }
+
+        .sim-actions {
+            background: #17212b;
+            padding: 12px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            border-top: 1px solid #0e1621;
+        }
+
+        .sim-btn {
+            background: #242f3d;
+            border: 1px solid #2b5278;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .sim-btn:hover { background: #2b5278; }
+
+        .sim-input-box {
+            padding: 10px 14px;
+            background: #17212b;
+            display: flex;
+            gap: 8px;
+            border-top: 1px solid #242f3d;
+        }
+
+        .sim-input-box input {
+            flex: 1;
+            background: #242f3d;
+            border: 1px solid #2b5278;
+            color: #fff;
+            padding
+            font-size: 0.88rem;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .sim-btn:hover { background: #2b5278; }
+
+        .sim-input-box {
+            padding: 10px 14px;
+            background: #17212b;
+            display: flex;
+            gap: 8px;
+            border-top: 1px solid #242f3d;
+        }
+
+        .sim-input-box input {
+            flex: 1;
+            background: #242f3d;
+            border: 1px solid #2b5278;
+            color: #fff;
+            padding: 9px 14px;
+            border-radius: 20px;
+            outline: none;
+            font-size: 0.88rem;
+        }
+
+        .sim-input-box button {
+            background: var(--primary);
+            border: none;
+            color: #fff;
+            padding: 0 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 30px 24px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .35px 25px;
+            border-radius: 24px;
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-card.popular {
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 25px var(--primary-glow);
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #38bdf8;
+            margin: 15px 0;
+        }
+
+        .price-btn {
+            display: block;
+            background: #242f3d;
+            color: #fff;
+            padding: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .price-card.popular .price-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        /* SEO Blog Section */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .blog-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .blog-tag {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .blog-card h3 { font-size: 1.25rem; margin-bottom: 12px; }
+        .blog-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+
+        .review-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 22px;
+            border-radius: 16px;
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .review-stars { color: var(--gold); }
+        .review-card p { color: var(--text-muted); font-size: 0.92rem; }
+
+        /* FAQ */
+        .faq { max-width: 850px; margin: 0 auto 80px; }
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            margin-bottom: 14px;
+            padding: 22px;
+            border-radius: 16px;
+        }
+        .faq-item h4 { font-size: 1.1rem; color: #818cf8; margin-bottom: 8px; }
+        .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Mobile Floating CTA */
+        .floating-cta {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 14px;
+            border-radius: 30px;
+            font-weight: 800;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+        }
+
+        footer {
+            border-top: 1px solid var(--card-border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+            .floating-cta { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="https://t.me/EchoGrammmbot" class="logo">⚡ EchoGram</a>
+            <nav>
+                <a href="#simulator">شبیه‌ساز</a>
+                <a href="#features">امکانات</a>
+                <a href="#pricing">بسته‌ها</a>
+                <a href="#blog">مقالات</a>
+                <a href="#faq">سوالات</a>
+            </nav>
+            <a href="https://t.me/EchoGrammmbot" class="header-btn">ورود به @EchoGrammmbot</a>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="badge">🚀 مجهز به موتور هوش مصنوعی Llama 3 و اتصال GPS</div>
+            <h1>بزرگ‌ترین و امن‌ترین پلتفرم<br>چت ناشناس تلگرام در ایران</h1>
+            <p>بدون نیاز به ثبت‌نام، افشای شماره یا نصب برنامه اضافی! به نزدیک‌ترین افراد شهرت وصل شو، دایرکت ناشناس بفرست یا با هوش مصنوعی چت کن.</p>
+            <a href="https://t.me/EchoGrammmbot" class="cta-btn">
+                <span>ورود و شروع چت در @EchoGrammmbot</span>
+                <span>⚡</span>
+            </a>
+        </section>
+
+        <!-- Live Stats -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="userCount">۵۲,۳۴۰+</div>
+                <div class="stat-label">کاربر فعال ماهانه</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">۱.۲ ثانیه</div>
+                <div class="stat-label">میانگین سرعت اتصال</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">۱۰۰٪</div>
+                <div class="stat-label">امنیت و حفظ حریم خصوصی</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">۴.۹ / ۵</div>
+                <div class="stat-label">رضایت کاربران در گوگل</div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Guide -->
+        <div class="section-header">
+            <h2>چگونه کار می‌کند؟</h2>
+            <p>تنها در ۳ مرحله ساده به دنیای چت ناشناس وارد شوید</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">۱</div>
+                <h3>زدن دکمه استارت</h3>
+                <p>روی لینک ربات کلیک کنید و در تلگرام دکمه Start را لمس نمایید تا منوی پیشرفته باز شود.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">۲</div>
+                <h3>انتخاب حالت مکالمه</h3>
+                <p>بین اتصال تصادفی، چت با افراد نزدیک شهر (GPS) یا هوش مصنوعی یکی را انتخاب کنید.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">۳</div>
+                <h3>گفتگوی کاملاً امن</h3>
+                <p>بدون ترس از افشای هویت، عکس و پیام صوتی بفرستید و در هر لحظه چت را قطع یا عوض کنید.</p>
+            </div>
+        </div>
+
+        <!-- Interactive Web Simulator -->
+        <div class="section-header" id="simulator">
+            <h2>شبیه‌ساز آنلاین محیط ربات</h2>
+            <p>در کادر زیر روی دکمه‌ها کلیک کنید یا پیامی تایپ کنید تا پاسخ ربات را ببینید!</p>
+        </div>
+        <div class="simulator-box">
+            <div class="sim-header">
+                <div class="sim-avatar">EG</div>
+                <div>
+                    <h4 style="font-size: 0.95rem; color: #fff;">اکوگرام | EchoGram</h4>
+                    <p style="font-size: 0.75rem; color: #38bdf8;">آنلاین • پاسخگویی فوری</p>
+                </div>
+            </div>
+            <div class="sim-body" id="simBody">
+                <div class="sim-msg msg-in">سلام! به ربات اکوگرام خوش آمدی 🎭<br>دوست داری چطور چت کنیم؟</div>
+            </div>
+            <div class="sim-actions">
+                <button class="sim-btn" onclick="sendSimMsg('🎲 اتصال تصادفی', '🔍 در حال جستجوی آنلاین‌ها... ✅ به یک مخاطب ناشناس وصل شدید!')">🎲 اتصال تصادفی</button>
+                <button class="sim-btn" onclick="sendSimMsg('📍 افراد نزدیک (GPS)', '📍 موقعیت شما دریافت شد. نزدیک‌ترین فرد در فاصله ۳ کیلومتری شما پیدا شد!')">📍 افراد نزدیک (GPS)</button>
+                <button class="sim-btn" onclick="sendSimMsg('🤖 چت با هوش مصنوعی', '🤖 سلام! من دستیار هوش مصنوعی اکوگرام هستم. در چه زمینه‌ای مایل به صحبت هستید؟')">🤖 هوش مصنوعی</button>
+                <button class="sim-btn" onclick="sendSimMsg('💰 سکه رایگان', '🎁 لینک دعوت اختصاصی شما ساخته شد! با ارسال آن به دوستانتان ۱۰ سکه هدیه بگیرید.')">💰 سکه رایگان</button>
+            </div>
+            <div class="sim-input-box">
+                <input type="text" id="simInput" placeholder="پیامی بنویسید..." onkeypress="if(event.key==='Enter') handleSimText()">
+                <button onclick="handleSimText()">ارسال</button>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="section-header" id="features">
+            <h2>امکانات خارق‌العاده اکوگرام</h2>
+            <p>همه آنچه از یک سیستم ارتباطی ناشناس و پرسرعت انتظار دارید</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📍</div>
+                <h3>رادار همشهری‌یاب GPS</h3>
+                <p>با ارسال موقعیت مکانی تلگرام، افرادی که در محله و شهر شما هستند را پیدا کنید و با هم‌محله‌ای‌های خود گپ بزنید.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>هوش مصنوعی همیشه آنلاین</h3>
+                <p>هوش مصنوعی پیشرفته Llama 3 به عنوان یک دوست صمیمی، مشاور و همراه همیشگی ۲۴ ساعته در کنار شماست.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💌</div>
+                <h3>دایرکت مستقیم ناشناس</h3>
+                <p>بدون اینکه مشخص شود شما چه کسی هستید، به هر کاربری که می‌خواهید دایرکت مستقیم ناشناس ارسال نمایید.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>ضد اسپم و فوق امن</h3>
+                <p>مجهز به سیستم فیلترینگ کلمات نامناسب، جلوگیری از مزاحمت و قابلیت مسدودسازی و ریپورت سریع افراد خاطی.</p>
+            </div>
+        </div>
+
+        <!-- Pricing / VIP Plans -->
+        <div class="section-header" id="pricing">
+            <h2>بسته‌های ویژه و الماس</h2>
+            <p>امکانات ویژه VIP برای کسانی که می‌خواهند مکالمه نامحدود داشته باشند</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>بسته پایه</h3>
+                <div class="price-tag">رایگان</div>
+                <p>اتصال تصادفی نامحدود روزانه</p>
+                <p>۵ سکه هدیه اولیه</p>
+                <p>دریافت سکه با رفرال</p>
+                <a href="https://t.me/EchoGrammmbot" class="price-btn">شروع رایگان</a>
+            </div>
+            <div class="price-card popular">
+                <div class="badge" style="margin-bottom: 10px;">🔥 پرفروش‌ترین</div>
+                <h3>بسته نقره‌ای</h3>
+                <div class="price-tag">۲۹,۰۰۰ ت</div>
+                <p>۵۰ سکه اختصاصی</p>
+                <p>اتصال بدون صف انتظار</p>
+                <p>ارسال دایرکت به ۵ کاربر</p>
+                <a href="https://t.me/EchoGrammmbot" class="price-btn">خرید درون ربات</a>
+            </div>
+            <div class="price-card">
+                <h3>بسته الماس VIP</h3>
+                <div class="price-tag">۶۹,۰۰۰ ت</div>
+                <p>۱۵۰ سکه + نشان طلایی</p>
+                <p>چت نامحدود با افراد نزدیک</p>
+                <p>پشتیبانی اختصاصی ۲۴ ساعته</p>
+                <a href="https://t.me/EchoGrammmbot" class="price-btn">خرید درون ربات</a>
+            </div>
+        </div>
+
+        <!-- SEO Blog Posts -->
+        <div class="section-header" id="blog">
+            <h2>وبلاگ و راهنمای چت ناشناس</h2>
+            <p>آموزش‌ها و مقالات اختصاصی برای استفاده بهینه از ربات‌های تلگرام</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-tag">آموزش</div>
+                <h3>چگونه با افراد نزدیک و همشهری خود چت کنیم؟</h3>
+                <p>قابلیت چت مبتنی بر موقعیت مکانی (GPS) یکی از جذاب‌ترین امکانات اکوگرام است. با ارسال موقعیت، سیستم فاصله شما با سایر کاربران را به صورت ریاضی محاسبه کرده و بدون اشتراک‌گذاری آدرس دقیق، شما را متصل می‌کند.</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-tag">امنیت</div>
+                <h3>آیا چت ناشناس در تلگرام واقعاً امن است؟</h3>
+                <p>در پلتفرم اکوگرام، تمامی پیام‌ها از طریق سرورهای ایمن و بدون ثبت لاگ‌های دائمی جابجا می‌شوند. هویت، آیدی تلگرام و شماره شما برای طرف مقابل به هیچ وجه فاش نخواهد شد.</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-tag">راهنما</div>
+                <h3>چگونه بدون پرداخت پول سکه رایگان بگیریم؟</h3>
+                <p>سیستم زیرمجموعه‌گیری هوشمند اکوگرام به شما این امکان را می‌دهد که با اشتراک‌گذاری لینک دعوت اختصاصی خود با دوستان و گروه‌ها، به ازای هر ورود ۱۰ سکه رایگان دائمی دریافت نمایید.</p>
+            </div>
+        </div>
+
+        <!-- User Reviews -->
+        <div class="section-header">
+            <h2>نظرات کاربران اکوگرام</h2>
+            <p>ببینید بیش از ۴۰ هزار کاربر فعال درباره ما چه می‌گویند</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <strong>علیرضا از تهران</strong>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p>قابلیت چت با افراد نزدیکش واقعاً فوق‌العاده‌ست! با چند تا از بچه‌های دانشگاه خودمون که نزدیک بودن آشنا شدم.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <strong>مهسا از اصفهان</strong>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p>هوش مصنوعی‌ش خیلی جالبه، هر وقت نصف شب حوصلم سر میره باهاش حرف می‌زنم و دقیق جواب میده.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <strong>پوریا از شیراز</strong>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+                <p>سرعت اتصالش عالیه و اصلا قطعی نداره. امنیتش هم خیلی بالاست و حس خوبی به آدم میده.</p>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="section-header" id="faq">
+            <h2>سوالات متداول</h2>
+        </div>
+        <div class="faq">
+            <div class="faq-item">
+                <h4>چگونه وارد ربات شوم؟</h4>
+                <p>کافی است روی دکمه‌های ورود به ربات در این صفحه کلیک کنید یا در تلگرام آیدی <strong>@EchoGrammmbot</strong> را سرچ کنید.</p>
+            </div>
+            <div class="faq-item">
+                <h4>آیا برای استفاده نیاز به پرداخت هزینه است؟</h4>
+                <p>خیر، استفاده از ربات کاملاً رایگان است و با دعوت دوستانتان می‌توانید سکه‌های بیشتری نیز دریافت کنید.</p>
+            </div>
+            <div class="faq-item">
+                <h4>چطور از امنیت اطلاعاتم مطمئن باشم؟</h4>
+                <p>ربات هیچ دسترسی به اطلاعات شخصی و حساب کاربری شما ندارد و صرفاً پیام‌ها را به صورت ناشناس رله می‌کند.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 اکوگرام (EchoGram) | تمامی حقوق برای تیم توسعه اکوگرام محفوظ است.</p>
+            <p style="margin-top: 8px; font-size: 0.85rem; color: #64748b;">آیدی اختصاصی اتصال: @EchoGrammmbot</p>
+        </footer>
+    </div>
+
+    <!-- Mobile Floating CTA Button -->
+    <a href="https://t.me/EchoGrammmbot" class="floating-cta">ورود به ربات چت ناشناس @EchoGrammmbot ⚡</a>
+
+    <!-- Interactive Simulator JS Script -->
+    <script>
+        function sendSimMsg(userText, botReply) {
+            const body = document.getElementById('simBody');
+            
+            // Add user message
+            const userDiv = document.createElement('div');
+            userDiv.className = 'sim-msg msg-out';
+            userDiv.innerText = userText;
+            body.appendChild(userDiv);
+            body.scrollTop = body.scrollHeight;
+
+            // Simulate typing delay
+            setTimeout(() => {
+                const botDiv = document.createElement('div');
+                botDiv.className = 'sim-msg msg-in';
+                botDiv.innerText = botReply;
+                body.appendChild(botDiv);
+                body.scrollTop = body.scrollHeight;
+            }, 600);
+        }
+
+        function handleSimText() {
+            const input = document.getElementById('simInput');
+            const text = input.value.trim();
+            if (!text) return;
+            
+            input.value = '';
+            sendSimMsg(text, '🤖 پاسخ هوش مصنوعی: ممنون از پیامت! برای چت زنده نامحدود دکمه "ورود به ربات" در بالای صفحه را لمس کن تا در تلگرام گفتگو کنیم.');
+        }
+    </script>
+</body>
+</html>
